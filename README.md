@@ -4,10 +4,7 @@ Here lies the backend server for my portfolio that I'm working on.
 
 ## Features that I'm working on:
 
-- Viewing all posts
-  - Sorting them in latest to oldest, oldest to newest
-- Editing older posts
-- Deleting posts
+- Different blog table methods
 
 ## Getting Started
 
