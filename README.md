@@ -1,7 +1,36 @@
-# Toni Doan-Ha Portfolio
+# Toni Doan-Ha Portfolio Backend
 
-Welcome to my portfolio! This is the first iteration of my portfolio, so there is a lot of work to be done. 
+Here lies the backend server for my portfolio that I'm working on. 
 
-## Usage
+## Features that I'm working on:
 
-Check out my work here: [insert link]# toni-doanha-portfollio-backend
+- Viewing all posts
+  - Sorting them in latest to oldest, oldest to newest
+- Editing older posts
+- Deleting posts
+
+## Getting Started
+
+### Installation
+
+You'll need to clone this project and install the node modules via the terminal: `npm install`
+
+Then create a .env file for PostgreSQL credentials and where the server is being hosted:
+
+- USERNAME
+- HOST
+- DATABASE
+- PASSWORD
+- SERVER_PORT
+- DATABASE_PORT
+
+### Usage
+
+Use `npm start` to run the app on https://localhost:3000.
+
+
+
+
+
+
+
