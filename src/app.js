@@ -3,6 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const postRoutes = require('../routes/postRoutes');
+const authMiddleware = require('../middleware/authMiddleware');
 const cors = require('cors');
 
 const app = express();
@@ -10,6 +11,9 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
+
+// Authentication
+app.use('/posts', authMiddleware);
 
 // Routes
 app.use('/posts', postRoutes);

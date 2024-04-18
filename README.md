@@ -24,10 +24,3 @@ Then create a .env file for PostgreSQL credentials and where the server is being
 ### Usage
 
 Use `npm start` to run the app on https://localhost:3000.
-
-
-
-
-
-
-

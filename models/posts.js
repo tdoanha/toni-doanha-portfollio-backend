@@ -39,6 +39,21 @@ const Post = {
       client.release();
     }
   },
+  // Method to retrieve the 5 most recent posts
+  async getRecentPosts() {
+    const query = `
+      SELECT * FROM posts
+      ORDER BY created_at DESC
+      LIMIT 5
+    `;
+    const client = await pool.connect();
+    try {
+      const { rows } = await client.query(query);
+      return rows;
+    } finally {
+      client.release();
+    }
+  },
   // Method to get a post by ID
   async getById(postId) {
     const query = 'SELECT * FROM posts WHERE id = $1 AND deleted = FALSE';

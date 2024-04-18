@@ -26,6 +26,16 @@ const postController = {
     }
   },
 
+  getRecentPosts: async (req, res) => {
+    try {
+      const posts = await Post.getRecentPosts();
+      res.status(200).json(posts);
+    } catch (error) {
+      console.error('Error getting posts:', error);
+      res.status(500).json({ message: 'Internal server error'});
+    }
+  },
+
   // Controller method to get a post by ID
   getPostById: async (req, res) => {
     try {
